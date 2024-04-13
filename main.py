@@ -34,8 +34,8 @@ def run(playwright: Playwright):
             p.close()
 
         # 設定打開60頁就好
-        if times == 2:
-            print(f"已經打開{times+1}pages")
+        if times == 59:
+            # print(f"已經打開{times+1}pages")
             break
         else:
             page.locator("a[data-selenium='listingPagingPageNext']").click()
